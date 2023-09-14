@@ -15,20 +15,18 @@
     </asp:ContentPlaceHolder>
 </head>
 <body>
-    <header>
-        <nav class="navbar bg-body-tertiary">
+    <header class="border">
+        <nav class="navbar bg-white p-2">
             <div class="container-fluid">
-                <a class="navbar-brand">Navbar</a>
-                <form class="d-flex" role="search">
-                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                    <button class="btn btn-outline-success" type="submit">Search</button>
-                </form>
+                <a class="navbar-brand"><span class="fw-bold">IBID</span> | Bootcamp 4ª Edição</a>
             </div>
         </nav>
     </header>
-    <div>
-        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
-        </asp:ContentPlaceHolder>
-    </div>
+    <main>
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server" />
+    </main>
+    <footer class="p-4 text-center">
+        <h1>hello</h1>
+    </footer>
 </body>
 </html>
