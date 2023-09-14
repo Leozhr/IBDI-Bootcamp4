@@ -69,7 +69,7 @@
   <ItemGroup>
     <Content Include=".gitattributes" />
     <Content Include=".gitignore" />
-    <Content Include="Pages\CRUD.aspx" />
+    <Content Include="Pages\Product.aspx" />
     <Content Include="Pages\Index.aspx" />
     <Content Include="Content\Scripts\Toast.js" />
     <Content Include="Content\Styles\Globals.css" />
@@ -77,12 +77,12 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Code\ProductManager.cs" />
-    <Compile Include="Pages\CRUD.aspx.cs">
-      <DependentUpon>CRUD.aspx</DependentUpon>
+    <Compile Include="Pages\Product.aspx.cs">
+      <DependentUpon>Product.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Pages\CRUD.aspx.designer.cs">
-      <DependentUpon>CRUD.aspx</DependentUpon>
+    <Compile Include="Pages\Product.aspx.designer.cs">
+      <DependentUpon>Product.aspx</DependentUpon>
     </Compile>
     <Compile Include="Pages\Index.aspx.cs">
       <DependentUpon>Index.aspx</DependentUpon>

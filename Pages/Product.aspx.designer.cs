@@ -11,7 +11,7 @@ namespace IBDI_Bootcamp4.Pages
 {
 
 
-    public partial class CRUD
+    public partial class Product
     {
 
         /// <summary>

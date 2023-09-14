@@ -65,7 +65,7 @@ namespace IBDI_Bootcamp4.Pages
 
         protected void BtnCreate_Click(object sender, EventArgs e)
         {
-            Response.Redirect("~/Pages/CRUD.aspx?op=Create");
+            Response.Redirect("~/Pages/Product.aspx?op=Create");
         }
 
         protected void BtnUpdate_Click(object sender, EventArgs e)
@@ -78,7 +78,7 @@ namespace IBDI_Bootcamp4.Pages
 
                 if (int.TryParse(id, out int parsedId))
                 {
-                    Response.Redirect($"~/Pages/CRUD.aspx?id={parsedId}&op=Update");
+                    Response.Redirect($"~/Pages/Product.aspx?id={parsedId}&op=Update");
                 }
                 else
                 {

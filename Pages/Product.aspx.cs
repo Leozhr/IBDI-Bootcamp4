@@ -12,7 +12,7 @@ using System.Web.UI.WebControls;
 
 namespace IBDI_Bootcamp4.Pages
 {
-    public partial class CRUD : System.Web.UI.Page
+    public partial class Product : System.Web.UI.Page
     {
         readonly SqlConnection connect = new SqlConnection(ConfigurationManager.ConnectionStrings["ls_sql"].ConnectionString);
         public static string checkID = "-1";
@@ -48,6 +48,8 @@ namespace IBDI_Bootcamp4.Pages
                     {
                         String error = "viewToast('Ocorreu um erro, tente novamente mais tarde.');";
                         Page.ClientScript.RegisterStartupScript(this.GetType(), "toast", error, true);
+
+                        Response.Redirect("Index.aspx");
                     }
                 }
             }
@@ -89,6 +91,10 @@ namespace IBDI_Bootcamp4.Pages
 
                     case "Update":
                         SetPageTitleAndButton("Editar Produto", BtnUpdate);
+                        break;
+
+                    default:
+                        Response.Redirect("Index.aspx");
                         break;
                 }
             }
