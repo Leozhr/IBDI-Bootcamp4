@@ -71,9 +71,12 @@
     <Content Include=".gitignore" />
     <Content Include="Pages\CRUD.aspx" />
     <Content Include="Pages\Index.aspx" />
+    <Content Include="Content\Scripts\Toast.js" />
+    <Content Include="Content\Styles\Globals.css" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="App_Code\ProductManager.cs" />
     <Compile Include="Pages\CRUD.aspx.cs">
       <DependentUpon>CRUD.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -107,9 +110,7 @@
       <DependentUpon>Web.config</DependentUpon>
     </None>
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Models\" />
-  </ItemGroup>
+  <ItemGroup />
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>

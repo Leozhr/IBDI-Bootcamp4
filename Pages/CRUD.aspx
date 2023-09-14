@@ -3,28 +3,38 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
-<asp:Content ID="Content3" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
+<asp:Content ID="Content3" ContentPlaceHolderID="ContentPlaceHolder" runat="server">
+    <div style="height:100vh; background:#f4f4f4">
+        <div class="p-5 bg-white mt-5 mx-auto border rounded-3" style="width:max-content">
+
     <br />
-    <div class="mx-auto" style="width:250px">
+
+    <div class="mx-auto text-center mb-5">
         <asp:Label runat="server" CssClass="h2" ID="title" />
     </div>
 
-    <div class="container text-danger my-4 text-center rounded-1" style="width:400px; background:#f9d7db;">
-        <asp:Label runat="server" CssClass="p-3" Visible="false" ID="lblerror" />
-    </div>
-
-    <form runat="server" class="h-100 d-flex align-items-center justify-content-center">
+    <form runat="server" class="d-flex align-items-center justify-content-center mt-2">
         <div>
-            <div class="mb-3">
-                <label class="form-label">Nome do Produto</label>
-                <asp:TextBox runat="server" CssClass="form-control" ID="TableName" />
-                <label class="form-label">Valor do Produto</label>
-                <asp:TextBox runat="server" CssClass="form-control" ID="TablePrice" type="number"/>
+            <div class="mb-5">
+                <label class="form-label fs-6">Nome do Produto</label>
+                <div class="input-group input-group-lg mb-3">
+                    <asp:TextBox runat="server" CssClass="form-control" type="text" ID="TableName" Placeholder="Digite o nome do produto" />
+                </div>
+                <br />
+                <label class="form-label fs-6">Valor do Produto</label>
+                <div class="input-group input-group-lg mb-3">
+                    <span class="input-group-text">$</span>
+                        <asp:TextBox runat="server" CssClass="form-control" ID="TablePrice" Placeholder="0" type="number" />
+                    <span class="input-group-text">.00</span>
+                </div>
             </div>
-            <asp:Button runat="server" CssClass="btn btn-primary" ID="BtnCreate" Text="Criar" Visible="false" OnClick="BtnCreate_Click" />
-            <asp:Button runat="server" CssClass="btn btn-primary" ID="BtnUpdate" Text="Editar" Visible="false" OnClick="BtnUpdate_Click" />
-            <asp:Button runat="server" CssClass="btn btn-primary" ID="BtnDelete" Text="Deletar" Visible="false" OnClick="BtnDelete_Click" />
-            <asp:Button runat="server" CssClass="btn btn-primary btn-dark" ID="BtnReturn" Text="Voltar" Visible="true" OnClick="BtnReturn_Click" />
+            <div class="mx-auto">
+                <asp:Button runat="server" CssClass="btn btn-lg btn-primary w-100 mb-2" ID="BtnCreate" Text="Criar" Visible="false" OnClick="BtnCreate_Click" />
+                <asp:Button runat="server" CssClass="btn btn-lg btn-primary w-100 mb-2" ID="BtnUpdate" Text="Editar" Visible="false" OnClick="BtnUpdate_Click" />
+                <asp:Button runat="server" CssClass="btn btn-lg btn-primary w-100 mb-2 btn-dark" ID="BtnReturn" Text="Voltar" Visible="true" OnClick="BtnReturn_Click" />
+            </div>
           </div>
     </form>
+    </div>
+    </div>
 </asp:Content>
